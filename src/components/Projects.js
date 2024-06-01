@@ -59,7 +59,7 @@ export const Projects = ({youtube}) => {
       link: "https://www.youtube.com/watch?v=9if9PKzTiK0&t=722s",
     },
     {
-      title: "Discord bot with javascript",
+      title: "Discord bot with javascript\n(HINDI)",
       description: "Development",
       imgUrl: "https://i.ibb.co/wRKzFgM/Discord-bot-with-Javascript-2.png",
       link: "https://www.youtube.com/watch?v=UvNeDV_mCH8&t=1723s",
