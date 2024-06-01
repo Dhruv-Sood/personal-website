@@ -10,7 +10,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const Projects = ({youtube}) => {
+export const Projects = ({section}) => {
 
   const projects = [
     {
@@ -81,17 +81,31 @@ export const Projects = ({youtube}) => {
   ];
 
   let results = [];
-
-  if (youtube) {
+  let id = "";
+  let heading = "";
+  let description = "";
+  if (section==="youtube") {
     results = videos;
+    id="youtube"
+    heading = "Youtube"
+    description = "Here is the list of my recent youtube videos"
   }
-  else {
+  else if(section==="projects"){
     results = projects;
+    id="projects"
+    heading = "Projects"
+    description = "Here is the list of my recent projects"
   }
+
+
+  let titleDesc = [
+    ["Here is the list of my recent youtube videos"],
+    ["Here is the list of my recent projects"],
+  ]
 
 
   return (
-    <section className="project" id={youtube ? `youtube` : "projects"}>
+    <section className="project" id={id}>
       <Container>
         <Row>
           <Col size={12}>
@@ -102,13 +116,9 @@ export const Projects = ({youtube}) => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>{youtube ? `Youtube` : "Projects"}</h2>
+                  <h2>{heading}</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    {description} 
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -139,22 +149,14 @@ export const Projects = ({youtube}) => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Nothing to show..
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Nothing to show..
                         </p>
                       </Tab.Pane>
                     </Tab.Content>

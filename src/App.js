@@ -14,8 +14,8 @@ function App() {
       <NavBar />
       <Banner />
       {/* <Skills /> */}
-      <Projects youtube={true}/>
-      <Projects youtube={false}/>
+      <Projects section={"youtube"}/>
+      <Projects section={"projects"}/>
 
       {/* <Contact /> */}
       {/* <Footer /> */}
