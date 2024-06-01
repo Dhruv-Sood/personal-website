@@ -12,6 +12,24 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = ({section}) => {
 
+
+  let results = [];
+  let id = "";
+  let heading = "";
+  let description = "";
+  if (section === "youtube") {
+    results = videos;
+    id = "youtube";
+    heading = "Youtube";
+    description = "Here is the list of my recent youtube videos";
+  } else if (section === "projects") {
+    results = projects;
+    id = "projects";
+    heading = "Projects";
+    description = "Here is the list of my recent projects";
+  }
+
+
   const projects = [
     {
       title: "Business Startup",
@@ -80,28 +98,10 @@ export const Projects = ({section}) => {
     
   ];
 
-  let results = [];
-  let id = "";
-  let heading = "";
-  let description = "";
-  if (section==="youtube") {
-    results = videos;
-    id="youtube"
-    heading = "Youtube"
-    description = "Here is the list of my recent youtube videos"
-  }
-  else if(section==="projects"){
-    results = projects;
-    id="projects"
-    heading = "Projects"
-    description = "Here is the list of my recent projects"
-  }
+  
 
 
-  let titleDesc = [
-    ["Here is the list of my recent youtube videos"],
-    ["Here is the list of my recent projects"],
-  ]
+  
 
 
   return (
