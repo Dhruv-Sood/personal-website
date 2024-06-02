@@ -60,7 +60,7 @@ export const Banner = () => {
                   }
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
+                  <h1 className="changing-text">
                     {`Hi! I'm Dhruv Sood`} <br />
                     <span
                       className="txt-rotate"

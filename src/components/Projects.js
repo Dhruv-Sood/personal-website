@@ -12,55 +12,26 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = ({section}) => {
 
-
-  let results = [];
-  let id = "";
-  let heading = "";
-  let description = "";
-  if (section === "youtube") {
-    results = videos;
-    id = "youtube";
-    heading = "Youtube";
-    description = "Here is the list of my recent youtube videos";
-  } else if (section === "projects") {
-    results = projects;
-    id = "projects";
-    heading = "Projects";
-    description = "Here is the list of my recent projects";
-  }
-
-
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Flexbox Sensei",
+      description: "Best Educational Hack @mlh Hacks For Hackers",
+      imgUrl: "https://i.ibb.co/3T9fB0t/Flex-Box-Sensei-Logo-3.png",
+      link: "https://devpost.com/software/flexbox-sensei",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Lofi-Code Nest",
+      description: "Virtual Workspace For Chill Study/Coding Sessions",
+      imgUrl: "https://i.ibb.co/z6pGFK1/Copy-of-Flex-Box-Sensei-Logo.png",
+      link: "https://devpost.com/software/lofi-code-nest",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Troll Bot",
+      description: "A Discord Bot That Throws Joke",
+      imgUrl: "https://i.ibb.co/XJG1Snn/Copy-of-Flex-Box-Sensei-Logo-2.png",
+      link: "https://github.com/Dhruv-Sood/troll-bot",
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    
   ];
 
   const videos = [
@@ -95,11 +66,25 @@ export const Projects = ({section}) => {
         "https://i.ibb.co/L0gwp3T/Green-Neon-Hacking-Tutorials-You-Tube-Thumbnail-2.png",
       link: "https://www.youtube.com/watch?v=DUgNdFHzbGk&t=138s",
     },
-    
   ];
 
-  
 
+  let results = [];
+  let id = "";
+  let heading = "";
+  let description = "";
+  if (section === "youtube") {
+    results = videos;
+    id = "youtube";
+    heading = "Youtube";
+    description = "Here is the list of my recent youtube videos";
+  } else if (section === "projects") {
+    results = projects;
+    id = "projects";
+    heading = "Projects";
+    description = "Here is the list of my recent projects";
+  }
+  
 
   
 

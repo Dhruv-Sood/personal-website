@@ -616,3 +616,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+
+/* IMPORTANT CSS FOR UI-FIXES */
+
+.changing-text{
+  height: 200px;
+}
+
+.project{
+
+  --animate-duration: 0s;  /* Override animation duration to disable animations */
+  --animate-delay: 0s;     /* Override animation delay to disable delay */
+  --animate-repeat: 0;     /* Override animation repeat to disable repetition */
+
+}
