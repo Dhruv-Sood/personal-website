@@ -1,29 +1,52 @@
-import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import './Footer.css'
 
-export const Footer = () => {
+
+
+const Footer = () => {
   return (
-    <footer className="footer">
-      <Container>
-        <Row className="align-items-center">
-          <MailchimpForm />
-          <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
-            </div>
-            <p>Copyright 2022. All Rights Reserved</p>
-          </Col>
-        </Row>
-      </Container>
+     <footer>
+      <div className="footer">
+        <div className="row">
+          <a href="#">
+            <i className="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-youtube"></i>
+          </a>
+          <a href="#">
+            <i className="fa fa-twitter"></i>
+          </a>
+        </div>
+
+        <div className="row">
+          <ul>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Career</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="row">
+          INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By:
+          Mahesh
+        </div>
+      </div>
     </footer>
   )
 }
+export default Footer

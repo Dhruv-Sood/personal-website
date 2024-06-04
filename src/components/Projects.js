@@ -68,11 +68,29 @@ export const Projects = ({section}) => {
     },
   ];
 
+const blogs = [
+  {
+    title: "Create your FIRST AI BOT!!!!",
+    description: "Development",
+    imgUrl:"https://i.ibb.co/P4wF3hy/LIMITED-TIME-ONLY.png",
+    link: "https://dhruvsood.hashnode.dev/how-to-create-an-ai-discord-bot",
+  },
+  {
+    title: "Keep your CS fire burning",
+    description: "Development",
+    imgUrl: "https://i.ibb.co/3yrhMnZ/Fire-s-outta-control.png",
+    link: "https://dhruvsood.hashnode.dev/hacks-for-keeping-your-computer-science-fire-burning",
+  },
+  
+];
+
+
 
   let results = [];
   let id = "";
   let heading = "";
   let description = "";
+  let isEnd = false;
   if (section === "youtube") {
     results = videos;
     id = "youtube";
@@ -83,6 +101,12 @@ export const Projects = ({section}) => {
     id = "projects";
     heading = "Projects";
     description = "Here is the list of my recent projects";
+  } else if (section === "blogs") {
+    results = blogs;
+    id = "blogs";
+    heading = "Blogs";
+    description = "Here are my top technical blogs";
+    isEnd = true;
   }
   
 
@@ -90,7 +114,7 @@ export const Projects = ({section}) => {
 
 
   return (
-    <section className="project" id={id}>
+    <section className={`project ${isEnd ? 'end' : ""}`} id={id}>
       <Container>
         <Row>
           <Col size={12}>

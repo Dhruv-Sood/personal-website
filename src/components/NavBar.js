@@ -1,18 +1,15 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import navIcon4 from '../assets/img/nav-icon4.svg';
-import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import logo from "../assets/img/logo.svg";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon4 from "../assets/img/nav-icon4.svg";
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
-
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,16 +19,16 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
-    }
+    };
 
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
+  };
 
   return (
     <Router>
@@ -74,6 +71,15 @@ export const NavBar = () => {
               >
                 Projects
               </Nav.Link>
+              <Nav.Link
+                href="#blogs"
+                className={
+                  activeLink === "blogs" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("blogs")}
+              >
+                Blogs
+              </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -99,4 +105,4 @@ export const NavBar = () => {
       </Navbar>
     </Router>
   );
-}
+};

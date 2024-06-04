@@ -458,7 +458,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
 }
 .background-image-right {
-  top: 20%;
+  /* top: 20%; */
   position: absolute;
   bottom: 0;
   width: 35%;
@@ -631,4 +631,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   --animate-delay: 0s;     /* Override animation delay to disable delay */
   --animate-repeat: 0;     /* Override animation repeat to disable repetition */
 
+}
+
+
+/* css for min width */
+@media (max-width:1002px){
+  .changing-text{
+    height: 300px;
+    font-size: 67px !important; 
+  }
+}
+
+@media (max-width:440px){
+  .changing-text{
+    height: 300px;
+    font-size: 62px !important; 
+  }
+  
 }
