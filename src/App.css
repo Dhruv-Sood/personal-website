@@ -633,13 +633,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 
-
+.logo{
+  color: white;
+  font-size: 31px;
+  padding-top: 4px;
+}
 /* css for min width */
 @media (max-width:1002px){
   .changing-text{
     height: 300px;
     font-size: 67px !important; 
   }
+    .logo{
+  color: white;
+  font-size: 20px;
+  padding-top: 4px;
+}
 }
 
 @media (max-width:440px){
@@ -647,5 +656,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 300px;
     font-size: 62px !important; 
   }
+  .logo{
+  color: white;
+  font-size: 20px;
+  padding-top: 4px;
+}
   
 }
+
