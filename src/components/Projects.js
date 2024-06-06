@@ -72,8 +72,15 @@ const blogs = [
   {
     title: "Create your FIRST AI BOT!!!!",
     description: "Development",
-    imgUrl:"https://i.ibb.co/P4wF3hy/LIMITED-TIME-ONLY.png",
+    imgUrl: "https://i.ibb.co/P4wF3hy/LIMITED-TIME-ONLY.png",
     link: "https://dhruvsood.hashnode.dev/how-to-create-an-ai-discord-bot",
+  },
+  {
+    title: "Git for absolute beginners",
+    description: "Version Control",
+    imgUrl:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1674578204513/ecd466b0-cfd7-4c01-8392-8ef7ac785aad.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    link: "https://blogs.dhruvsood.in/what-is-git-for-beginners",
   },
   {
     title: "Keep your CS fire burning",
@@ -81,7 +88,6 @@ const blogs = [
     imgUrl: "https://i.ibb.co/3yrhMnZ/Fire-s-outta-control.png",
     link: "https://dhruvsood.hashnode.dev/hacks-for-keeping-your-computer-science-fire-burning",
   },
-  
 ];
 
 
