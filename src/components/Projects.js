@@ -14,6 +14,12 @@ export const Projects = ({section}) => {
 
   const projects = [
     {
+      title: "Snap Chef",
+      description: "Your personal virtual chef",
+      imgUrl: "https://i.ibb.co/Bj14WrT/Snap-Chef-thumbnail.png",
+      link: "https://github.com/Dhruv-Sood/Snap-Chef",
+    },
+    {
       title: "Flexbox Sensei",
       description: "Best Educational Hack @mlh Hacks For Hackers",
       imgUrl: "https://i.ibb.co/3T9fB0t/Flex-Box-Sensei-Logo-3.png",
@@ -31,7 +37,6 @@ export const Projects = ({section}) => {
       imgUrl: "https://i.ibb.co/XJG1Snn/Copy-of-Flex-Box-Sensei-Logo-2.png",
       link: "https://github.com/Dhruv-Sood/troll-bot",
     },
-    
   ];
 
   const videos = [
@@ -186,5 +191,6 @@ const blogs = [
     </section>
   );
 }
+
 
 
