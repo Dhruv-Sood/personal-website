@@ -41,6 +41,13 @@ export const Projects = ({section}) => {
 
   const videos = [
     {
+      title: "Complete STL for Beginners",
+      description: "Problem Solving",
+      imgUrl:
+        "https://i.ibb.co/hXk2bR6/2-B12807-B-0-B99-4978-BE8-A-89-E3-FE1-CD060.png",
+      link: "https://youtu.be/zjqWawzmN4Y?si=OKSCIYyf42HfT5tt",
+    },
+    {
       title: "DaisyUI Crash Course",
       description: "Design & Development",
       imgUrl: daisyUI,
@@ -191,6 +198,5 @@ const blogs = [
     </section>
   );
 }
-
 
 
