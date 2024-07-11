@@ -41,7 +41,7 @@ export const Projects = ({section}) => {
 
   const videos = [
     {
-      title: "Swift 5.10 Course",
+      title: "Swift 5.10 Course (Ongoing)",
       description: "Development",
       imgUrl: "https://i.ibb.co/8Bfpz1g/Course.png",
       link: "https://www.youtube.com/playlist?list=PLPGy7AhAwNnZVOg4Gqoc3GVE9p4VAbTUw",
