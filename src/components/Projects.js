@@ -16,41 +16,40 @@ export const Projects = ({section}) => {
     {
       title: "Snap Chef",
       description: "Your personal virtual chef",
-      imgUrl: "https://i.ibb.co/Bj14WrT/Snap-Chef-thumbnail.png",
+      imgUrl: "/displayPics/projects/snap_chef.png",
       link: "https://github.com/Dhruv-Sood/Snap-Chef",
     },
     {
       title: "Flexbox Sensei",
       description: "Best Educational Hack @mlh Hacks For Hackers",
-      imgUrl: "https://i.ibb.co/3T9fB0t/Flex-Box-Sensei-Logo-3.png",
+      imgUrl: "/displayPics/projects/flexbox_sensei.png",
       link: "https://devpost.com/software/flexbox-sensei",
     },
     {
       title: "Lofi-Code Nest",
       description: "Virtual Workspace For Chill Study/Coding Sessions",
-      imgUrl: "https://i.ibb.co/z6pGFK1/Copy-of-Flex-Box-Sensei-Logo.png",
+      imgUrl: "/displayPics/projects/lofi_code_nest.png",
       link: "https://devpost.com/software/lofi-code-nest",
     },
-    {
-      title: "Troll Bot",
-      description: "A Discord Bot That Throws Joke",
-      imgUrl: "https://i.ibb.co/XJG1Snn/Copy-of-Flex-Box-Sensei-Logo-2.png",
-      link: "https://github.com/Dhruv-Sood/troll-bot",
-    },
+    // {
+    //   title: "Troll Bot",
+    //   description: "A Discord Bot That Throws Joke",
+    //   imgUrl: "https://i.ibb.co/XJG1Snn/Copy-of-Flex-Box-Sensei-Logo-2.png",
+    //   link: "https://github.com/Dhruv-Sood/troll-bot",
+    // },
   ];
 
   const videos = [
     {
       title: "Swift 5.10 Course (Ongoing)",
       description: "Development",
-      imgUrl: "https://i.ibb.co/8Bfpz1g/Course.png",
+      imgUrl: "/displayPics/youtube/swift.png",
       link: "https://www.youtube.com/playlist?list=PLPGy7AhAwNnZVOg4Gqoc3GVE9p4VAbTUw",
     },
     {
       title: "Complete STL for Beginners",
       description: "Problem Solving",
-      imgUrl:
-        "https://i.ibb.co/hXk2bR6/2-B12807-B-0-B99-4978-BE8-A-89-E3-FE1-CD060.png",
+      imgUrl: "/displayPics/youtube/stl.png",
       link: "https://youtu.be/zjqWawzmN4Y?si=OKSCIYyf42HfT5tt",
     },
     {
@@ -62,48 +61,52 @@ export const Projects = ({section}) => {
     {
       title: "Skipping Backend Like A Pro",
       description: "Development",
-      imgUrl: "https://i.ibb.co/qMsDXKZ/Google-Sheets-vs-React-2.png",
+      imgUrl: "/displayPics/youtube/skip_backend.png",
       link: "https://www.youtube.com/watch?v=9if9PKzTiK0&t=722s",
     },
     {
       title: "Discord bot with javascript\n(HINDI)",
       description: "Development",
-      imgUrl: "https://i.ibb.co/wRKzFgM/Discord-bot-with-Javascript-2.png",
+      imgUrl: "/displayPics/youtube/discord_bot.png",
       link: "https://www.youtube.com/watch?v=UvNeDV_mCH8&t=1723s",
     },
     {
       title: "Master CSS Flexbox",
       description: "Design & Development",
-      imgUrl: "https://i.ibb.co/V2zsDhf/Flexbox-Zombies-2.png",
+      imgUrl: "/displayPics/youtube/flexbox.png",
       link: "https://www.youtube.com/watch?v=VAefPLB9PWA",
     },
     {
       title: "How to keep your CS fire burning",
       description: "Talks",
-      imgUrl:
-        "https://i.ibb.co/L0gwp3T/Green-Neon-Hacking-Tutorials-You-Tube-Thumbnail-2.png",
+      imgUrl: "/displayPics/youtube/csFire.png",
       link: "https://www.youtube.com/watch?v=DUgNdFHzbGk&t=138s",
     },
   ];
 
 const blogs = [
   {
+    title: "Reddit Image Scrapper Using Python",
+    description: "Development",
+    imgUrl: "/displayPics/blogs/reddit_scrapper.png",
+    link: "https://blogs.dhruvsood.in/how-to-use-python-to-download-100-cat-pics-in-one-go",
+  },
+  {
     title: "Create your FIRST AI BOT!!!!",
     description: "Development",
-    imgUrl: "https://i.ibb.co/P4wF3hy/LIMITED-TIME-ONLY.png",
+    imgUrl: "/displayPics/blogs/ai_bot.png",
     link: "https://dhruvsood.hashnode.dev/how-to-create-an-ai-discord-bot",
   },
   {
     title: "Git for absolute beginners",
     description: "Version Control",
-    imgUrl:
-      "https://cdn.hashnode.com/res/hashnode/image/upload/v1674578204513/ecd466b0-cfd7-4c01-8392-8ef7ac785aad.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    imgUrl: "/displayPics/blogs/git.jpeg",
     link: "https://blogs.dhruvsood.in/what-is-git-for-beginners",
   },
   {
     title: "Keep your CS fire burning",
     description: "Development",
-    imgUrl: "https://i.ibb.co/3yrhMnZ/Fire-s-outta-control.png",
+    imgUrl: "/displayPics/blogs/cs_fire.png",
     link: "https://dhruvsood.hashnode.dev/hacks-for-keeping-your-computer-science-fire-burning",
   },
 ];
