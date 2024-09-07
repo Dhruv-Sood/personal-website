@@ -14,6 +14,18 @@ export const Projects = ({section}) => {
 
   const projects = [
     {
+      title: "Dime-Pass",
+      description: "A DeFi Eth exchange platform",
+      imgUrl: "/displayPics/projects/dimepass.png",
+      link: "https://github.com/Dhruv-Sood/Dime-Pass",
+    },
+    {
+      title: "Solana Faucet",
+      description: "A Faucet for Solana Devnet",
+      imgUrl: "/displayPics/projects/solfaucet.png",
+      link: "https://github.com/Dhruv-Sood/solana-faucet",
+    },
+    {
       title: "Snap Chef",
       description: "Your personal virtual chef",
       imgUrl: "/displayPics/projects/snap_chef.png",
