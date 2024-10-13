@@ -1,3 +1,4 @@
+import Spline from "@splinetool/react-spline";
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
@@ -49,63 +50,11 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1 className="changing-text">
-                    {`Hi! I'm Dhruv Sood`} <br />
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Youtuber", "Open-source enthusiast" ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span>
-                  </h1>
-                  <p>
-                    Hey there! I'm Dhruv Sood, a 19-year-old web dev,
-                    open-source fanatic, and love to create awesome tuts on youtube and write blogs. I love building
-                    cool web stuff and sharing tips and tricks on my channel.
-                    Check out my portfolio to see what I've been up to!
-                  </p>
-                  <button
-                    onClick={() =>
-                      window.open(
-                        "https://x.com/dhruv_sood_",
-                        "_blank",
-                        "noopener noreferrer"
-                      )
-                    }
-                  >
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Img" />
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
+      <Spline scene="https://prod.spline.design/GcDV6zFiV2XBYZaj/scene.splinecode" />
     </section>
   );
 }
+
+
+
+
