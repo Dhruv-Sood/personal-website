@@ -7,12 +7,25 @@ import projImg3 from "../assets/img/project-img3.png";
 import daisyUI from "../assets/img/daisyUI.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
-export const Projects = ({section}) => {
-
+export const Projects = ({ section }) => {
   const projects = [
+    {
+      title: "SkyCode",
+      description:
+        "A Vercel-like utility for deploying React projects, divided into services for uploading, deploying, and request handling, built using TypeScript.",
+      imgUrl: "/displayPics/projects/skycode.png",
+      link: "https://github.com/Dhruv-Sood/SkyCode",
+    },
+    {
+      title: "Kalp-Medika",
+      description:
+        "Awarded at BUILD Hackathon. A blockchain-based pharma supply chain tracker.",
+      imgUrl: "/displayPics/projects/kalpmedika.png",
+      link: "https://github.com/Dhruv-Sood/Kalp-Medika",
+    },
     {
       title: "Dime-Pass",
       description: "A DeFi Eth exchange platform",
@@ -27,14 +40,14 @@ export const Projects = ({section}) => {
     },
     {
       title: "Snap Chef",
-      description: "Your personal virtual chef",
+      description: "Your personal AI-Powered virtual chef",
       imgUrl: "/displayPics/projects/snap_chef.png",
       link: "https://github.com/Dhruv-Sood/Snap-Chef",
     },
     {
       title: "Flexbox Sensei",
       description: "Best Educational Hack @mlh Hacks For Hackers",
-      imgUrl: "/displayPics/projects/flexbox_sensei.png",
+      imgUrl: "/displayPics/projects/flexbox-sensei.png",
       link: "https://devpost.com/software/flexbox-sensei",
     },
     {
@@ -96,34 +109,32 @@ export const Projects = ({section}) => {
     },
   ];
 
-const blogs = [
-  {
-    title: "Reddit Image Scrapper Using Python",
-    description: "Development",
-    imgUrl: "/displayPics/blogs/reddit_scrapper.png",
-    link: "https://blogs.dhruvsood.in/how-to-use-python-to-download-100-cat-pics-in-one-go",
-  },
-  {
-    title: "Create your FIRST AI BOT!!!!",
-    description: "Development",
-    imgUrl: "/displayPics/blogs/ai_bot.png",
-    link: "https://dhruvsood.hashnode.dev/how-to-create-an-ai-discord-bot",
-  },
-  {
-    title: "Git for absolute beginners",
-    description: "Version Control",
-    imgUrl: "/displayPics/blogs/git.jpeg",
-    link: "https://blogs.dhruvsood.in/what-is-git-for-beginners",
-  },
-  {
-    title: "Keep your CS fire burning",
-    description: "Development",
-    imgUrl: "/displayPics/blogs/cs_fire.png",
-    link: "https://dhruvsood.hashnode.dev/hacks-for-keeping-your-computer-science-fire-burning",
-  },
-];
-
-
+  const blogs = [
+    {
+      title: "Reddit Image Scrapper Using Python",
+      description: "Development",
+      imgUrl: "/displayPics/blogs/reddit_scrapper.png",
+      link: "https://blogs.dhruvsood.in/how-to-use-python-to-download-100-cat-pics-in-one-go",
+    },
+    {
+      title: "Create your FIRST AI BOT!!!!",
+      description: "Development",
+      imgUrl: "/displayPics/blogs/ai_bot.png",
+      link: "https://dhruvsood.hashnode.dev/how-to-create-an-ai-discord-bot",
+    },
+    {
+      title: "Git for absolute beginners",
+      description: "Version Control",
+      imgUrl: "/displayPics/blogs/git.jpeg",
+      link: "https://blogs.dhruvsood.in/what-is-git-for-beginners",
+    },
+    {
+      title: "Keep your CS fire burning",
+      description: "Development",
+      imgUrl: "/displayPics/blogs/cs_fire.png",
+      link: "https://dhruvsood.hashnode.dev/hacks-for-keeping-your-computer-science-fire-burning",
+    },
+  ];
 
   let results = [];
   let id = "";
@@ -147,13 +158,9 @@ const blogs = [
     description = "Here are my top technical blogs";
     isEnd = true;
   }
-  
-
-  
-
 
   return (
-    <section className={`project ${isEnd ? 'end' : ""}`} id={id}>
+    <section className={`project ${isEnd ? "end" : ""}`} id={id}>
       <Container>
         <Row>
           <Col size={12}>
@@ -165,9 +172,7 @@ const blogs = [
                   }
                 >
                   <h2>{heading}</h2>
-                  <p>
-                    {description} 
-                  </p>
+                  <p>{description}</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -193,19 +198,15 @@ const blogs = [
                       <Tab.Pane eventKey="first">
                         <Row>
                           {results.map((project, index) => {
-                            return <ProjectCard key={index} {...project}/>;
+                            return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>
-                          Nothing to show..
-                        </p>
+                        <p>Nothing to show..</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Nothing to show..
-                        </p>
+                        <p>Nothing to show..</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
@@ -218,6 +219,4 @@ const blogs = [
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
-}
-
-
+};
